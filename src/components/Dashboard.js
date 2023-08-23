@@ -51,7 +51,7 @@ export default class Dashboard extends Component {
                             <button
                               className="btn btn-primary px-10 "
                               data-bs-toggle="dropdown"
-                              href="#"
+                              href="_blank"
                             >
                               View List
                             </button>
@@ -70,7 +70,7 @@ export default class Dashboard extends Component {
                             </div>
                             <div>
                               <a
-                                href="#"
+                                href="_blank"
                                 className="text-dark hover-primary mb-5 d-block fs-16"
                               >
                                 Amelia
@@ -106,7 +106,7 @@ export default class Dashboard extends Component {
                             </div>
                             <div>
                               <a
-                                href="#"
+                                href="_blank"
                                 className="text-dark hover-primary mb-5 d-block fs-16"
                               >
                                 Johen
@@ -142,7 +142,7 @@ export default class Dashboard extends Component {
                             </div>
                             <div>
                               <a
-                                href="#"
+                                href="_blank"
                                 className="text-dark hover-primary mb-5 d-block fs-16"
                               >
                                 Micheal
@@ -178,7 +178,7 @@ export default class Dashboard extends Component {
                             </div>
                             <div>
                               <a
-                                href="#"
+                                href="_blank"
                                 className="text-dark hover-primary mb-5 d-block fs-16"
                               >
                                 Amanda
@@ -214,7 +214,7 @@ export default class Dashboard extends Component {
                             </div>
                             <div>
                               <a
-                                href="#"
+                                href="_blank"
                                 className="text-dark hover-primary mb-5 d-block fs-16"
                               >
                                 Tyler
@@ -251,21 +251,21 @@ export default class Dashboard extends Component {
                             <button
                               className="dropdown-toggle btn btn-warning-light px-10"
                               data-bs-toggle="dropdown"
-                              href="#"
+                              href="_blank"
                             >
                               Today
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
-                              <a className="dropdown-item active" href="#">
+                              <a className="dropdown-item active" href="_blank">
                                 Today
                               </a>
-                              <a className="dropdown-item" href="#">
+                              <a className="dropdown-item" href="_blank">
                                 Yesterday
                               </a>
-                              <a className="dropdown-item" href="#">
+                              <a className="dropdown-item" href="_blank">
                                 Last week
                               </a>
-                              <a className="dropdown-item" href="#">
+                              <a className="dropdown-item" href="_blank">
                                 Last month
                               </a>
                             </div>
@@ -274,6 +274,7 @@ export default class Dashboard extends Component {
                       </div>
                       <div className="box-body">
                         <div id="revenue5" className="min-h-325"></div>
+
                         <div className="d-flex justify-content-center">
                           <p className="d-flex align-items-center fw-600 mx-20">
                             <span className="badge badge-xl badge-dot badge-warning me-20"></span>{" "}
@@ -309,7 +310,7 @@ export default class Dashboard extends Component {
                             through product.
                           </p>
 
-                          <a href="#" className="btn btn-danger-light">
+                          <a href="_blank" className="btn btn-danger-light">
                             Read More
                           </a>
                         </div>
@@ -364,7 +365,7 @@ export default class Dashboard extends Component {
                   <div className="box-header no-border">
                     <h4 className="box-title">Media Files</h4>
                     <div className="box-controls pull-right d-md-flex d-none">
-                      <a href="#">View All</a>
+                      <a href="_blank">View All</a>
                     </div>
                   </div>
                 </div>
@@ -457,7 +458,7 @@ export default class Dashboard extends Component {
                       <div className="box-header no-border">
                         <h4 className="box-title">Lessons</h4>
                         <div className="box-controls pull-right d-md-flex d-none">
-                          <a href="#">View All</a>
+                          <a href="_blank">View All</a>
                         </div>
                       </div>
                     </div>
@@ -470,23 +471,23 @@ export default class Dashboard extends Component {
                               <div className="dropdown">
                                 <a
                                   data-bs-toggle="dropdown"
-                                  href="#"
+                                  href="_blank"
                                   className="px-10 pt-5"
                                 >
                                   <i className="ti-more-alt"></i>
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-end">
-                                  <a className="dropdown-item" href="#">
+                                  <a className="dropdown-item" href="_blank">
                                     <i className="ti-import"></i> Import
                                   </a>
-                                  <a className="dropdown-item" href="#">
+                                  <a className="dropdown-item" href="_blank">
                                     <i className="ti-export"></i> Export
                                   </a>
-                                  <a className="dropdown-item" href="#">
+                                  <a className="dropdown-item" href="_blank">
                                     <i className="ti-printer"></i> Print
                                   </a>
                                   <div className="dropdown-divider"></div>
-                                  <a className="dropdown-item" href="#">
+                                  <a className="dropdown-item" href="_blank">
                                     <i className="ti-settings"></i> Settings
                                   </a>
                                 </div>
@@ -497,7 +498,7 @@ export default class Dashboard extends Component {
                           <div className="d-flex align-items-center justify-content-between mt-10">
                             <div className="d-flex">
                               <a
-                                href="#"
+                                href="_blank"
                                 className="me-15 bg-lightest h-50 w-50 l-h-50 rounded-circle text-center overflow-hidden"
                               >
                                 <img
@@ -507,7 +508,7 @@ export default class Dashboard extends Component {
                                 />
                               </a>
                               <a
-                                href="#"
+                                href="_blank"
                                 className="me-15 bg-lightest h-50 w-50 l-h-50 rounded-circle text-center overflow-hidden"
                               >
                                 <img
@@ -517,7 +518,7 @@ export default class Dashboard extends Component {
                                 />
                               </a>
                               <a
-                                href="#"
+                                href="_blank"
                                 className="me-15 bg-lightest h-50 w-50 l-h-50 rounded-circle text-center overflow-hidden"
                               >
                                 <img
@@ -544,23 +545,23 @@ export default class Dashboard extends Component {
                               <div className="dropdown">
                                 <a
                                   data-bs-toggle="dropdown"
-                                  href="#"
+                                  href="_blank"
                                   className="px-10 pt-5"
                                 >
                                   <i className="ti-more-alt"></i>
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-end">
-                                  <a className="dropdown-item" href="#">
+                                  <a className="dropdown-item" href="_blank">
                                     <i className="ti-import"></i> Import
                                   </a>
-                                  <a className="dropdown-item" href="#">
+                                  <a className="dropdown-item" href="_blank">
                                     <i className="ti-export"></i> Export
                                   </a>
-                                  <a className="dropdown-item" href="#">
+                                  <a className="dropdown-item" href="_blank">
                                     <i className="ti-printer"></i> Print
                                   </a>
                                   <div className="dropdown-divider"></div>
-                                  <a className="dropdown-item" href="#">
+                                  <a className="dropdown-item" href="_blank">
                                     <i className="ti-settings"></i> Settings
                                   </a>
                                 </div>
@@ -571,7 +572,7 @@ export default class Dashboard extends Component {
                           <div className="d-flex align-items-center justify-content-between mt-10">
                             <div className="d-flex">
                               <a
-                                href="#"
+                                href="_blank"
                                 className="me-15 bg-lightest h-50 w-50 l-h-50 rounded-circle text-center overflow-hidden"
                               >
                                 <img
@@ -581,7 +582,7 @@ export default class Dashboard extends Component {
                                 />
                               </a>
                               <a
-                                href="#"
+                                href="_blank"
                                 className="me-15 bg-lightest h-50 w-50 l-h-50 rounded-circle text-center overflow-hidden"
                               >
                                 <img
@@ -591,7 +592,7 @@ export default class Dashboard extends Component {
                                 />
                               </a>
                               <a
-                                href="#"
+                                href="_blank"
                                 className="me-15 bg-lightest h-50 w-50 l-h-50 rounded-circle text-center overflow-hidden"
                               >
                                 <img
@@ -616,7 +617,7 @@ export default class Dashboard extends Component {
                       <div className="box-header no-border">
                         <h4 className="box-title">Lessons</h4>
                         <div className="box-controls pull-right d-md-flex d-none">
-                          <a href="#"> View All </a>
+                          <a href="_blank"> View All </a>
                         </div>
                       </div>
                     </div>
@@ -633,7 +634,7 @@ export default class Dashboard extends Component {
                               </div>
                               <div className="d-flex flex-column fw-500">
                                 <a
-                                  href="#"
+                                  href="_blank"
                                   className="text-dark hover-primary mb-1 fs-16"
                                 >
                                   Informatic Course
@@ -643,7 +644,7 @@ export default class Dashboard extends Component {
                                 </span>
                               </div>
                             </div>
-                            <a href="#">
+                            <a href="_blank">
                               <span className="icon-Arrow-right fs-24">
                                 <span className="path1"></span>
                                 <span className="path2"></span>
@@ -661,7 +662,7 @@ export default class Dashboard extends Component {
                               </div>
                               <div className="d-flex flex-column fw-500">
                                 <a
-                                  href="#"
+                                  href="_blank"
                                   className="text-dark hover-primary mb-1 fs-16"
                                 >
                                   Live Drawing
@@ -671,7 +672,7 @@ export default class Dashboard extends Component {
                                 </span>
                               </div>
                             </div>
-                            <a href="#">
+                            <a href="_blank">
                               <span className="icon-Arrow-right fs-24">
                                 <span className="path1"></span>
                                 <span className="path2"></span>
@@ -692,7 +693,7 @@ export default class Dashboard extends Component {
                               </div>
                               <div className="d-flex flex-column fw-500">
                                 <a
-                                  href="#"
+                                  href="_blank"
                                   className="text-dark hover-primary mb-1 fs-16"
                                 >
                                   Contemporary Art
@@ -702,7 +703,7 @@ export default class Dashboard extends Component {
                                 </span>
                               </div>
                             </div>
-                            <a href="#">
+                            <a href="_blank">
                               <span className="icon-Arrow-right fs-24">
                                 <span className="path1"></span>
                                 <span className="path2"></span>

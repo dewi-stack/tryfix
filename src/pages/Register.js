@@ -69,7 +69,7 @@ export default class Register extends Component {
                             <input type="checkbox" id="basic_checkbox_1" />
                             <label htmlFor="basic_checkbox_1">
                               I agree to the{" "}
-                              <a href="#" className="text-warning">
+                              <a href="_blank" className="text-warning">
                                 <b>Terms</b>
                               </a>
                             </label>
@@ -104,19 +104,19 @@ export default class Register extends Component {
                   <p className="gap-items-2 mb-20">
                     <a
                       className="btn btn-social-icon btn-round btn-facebook"
-                      href="#"
+                      href="_blank"
                     >
                       <i className="fa fa-facebook"></i>
                     </a>
                     <a
                       className="btn btn-social-icon btn-round btn-twitter"
-                      href="#"
+                      href="_blank"
                     >
                       <i className="fa fa-twitter"></i>
                     </a>
                     <a
                       className="btn btn-social-icon btn-round btn-instagram"
-                      href="#"
+                      href="_blank"
                     >
                       <i className="fa fa-instagram"></i>
                     </a>

@@ -1,20 +1,33 @@
 import React, { Component } from "react";
+// import { Link } from 'react-router-dom';
+import PerfectScrollbar from 'perfect-scrollbar';
 
-export default class Menu extends Component {
+class Menu extends Component {
+
+  componentDidMount() {
+    setTimeout(() => {
+      const element = document.querySelector('.multinav-scroll');
+      if (element) {
+        new PerfectScrollbar(element);
+      }
+    }, 1000); // Adjust the delay as needed
+  }  
+
   render() {
     return (
       <div>
         <div>
           <aside className="main-sidebar">
-            {/* sidebar */}
             <section className="sidebar position-relative">
               <div className="multinav">
-                <div className="multinav-scroll" style={{ height: "100%" }}>
-                  {/* sidebar menu  */}
+                <div
+                  className="multinav-scroll"
+                  style={{ height: "100%", overflow: "auto" }}
+                >
                   <ul className="sidebar-menu" data-widget="tree">
                     <li className="header">Pengelola Klinik</li>
                     <li className="treeview">
-                      <a href="#">
+                      <a href="index.html">
                         <i className="icon-Layout-4-blocks">
                           <span className="path1"></span>
                           <span className="path2"></span>
@@ -26,13 +39,13 @@ export default class Menu extends Component {
                       </a>
                       <ul className="treeview-menu">
                         <li>
-                          <a href="index.html">
-                            <i className="icon-Commit">
-                              <span className="path1"></span>
-                              <span className="path2"></span>
-                            </i>
-                            Admin
-                          </a>
+                          {/* <Link to="/admin"> */}
+                          <i className="icon-Commit">
+                            <span className="path1"></span>
+                            <span className="path2"></span>
+                          </i>
+                          Admin
+                          {/* </Link> */}
                         </li>
                         <li>
                           <a href="index2.html">
@@ -61,20 +74,15 @@ export default class Menu extends Component {
                             Apoteker
                           </a>
                         </li>
-                        <li>
-                          <a href="index4.html">
-                            <i className="icon-Commit">
-                              <span className="path1"></span>
-                              <span className="path2"></span>
-                            </i>
-                            Pasien
-                          </a>
-                        </li>
                       </ul>
                     </li>
                     <li className="header">Ruangan Klinik </li>
                     <li className="treeview">
-                      <a href="#">
+                      <a
+                        href="https://www.example.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="icon-Write">
                           <span className="path1"></span>
                           <span className="path2"></span>
@@ -95,7 +103,11 @@ export default class Menu extends Component {
                           </a>
                         </li>
                         <li className="treeview">
-                          <a href="#">
+                          <a
+                            href="https://www.example.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <i className="icon-Commit">
                               <span className="path1"></span>
                               <span className="path2"></span>
@@ -217,7 +229,11 @@ export default class Menu extends Component {
                           </a>
                         </li>
                         <li className="treeview">
-                          <a href="#">
+                          <a
+                            href="https://www.example.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <i className="icon-Commit">
                               <span className="path1"></span>
                               <span className="path2"></span>
@@ -357,7 +373,11 @@ export default class Menu extends Component {
                           </a>
                         </li>
                         <li className="treeview">
-                          <a href="#">
+                          <a
+                            href="https://www.example.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <i className="icon-Commit">
                               <span className="path1"></span>
                               <span className="path2"></span>
@@ -463,7 +483,11 @@ export default class Menu extends Component {
                       </ul>
                     </li>
                     <li className="treeview">
-                      <a href="#">
+                      <a
+                        href="https://www.example.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="icon-File">
                           <span className="path1"></span>
                           <span className="path2"></span>
@@ -476,7 +500,11 @@ export default class Menu extends Component {
                       </a>
                       <ul className="treeview-menu">
                         <li className="treeview">
-                          <a href="#">
+                          <a
+                            href="https://www.example.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <i className="icon-Commit">
                               <span className="path1"></span>
                               <span className="path2"></span>
@@ -580,7 +608,11 @@ export default class Menu extends Component {
                           </ul>
                         </li>
                         <li className="treeview">
-                          <a href="#">
+                          <a
+                            href="https://www.example.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <i className="icon-Commit">
                               <span className="path1"></span>
                               <span className="path2"></span>
@@ -631,9 +663,148 @@ export default class Menu extends Component {
                         </li>
                       </ul>
                     </li>
+                    <li className="treeview">
+                      <a
+                        href="https://www.example.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="icon-Chart-pie">
+                          <span className="path1"></span>
+                          <span className="path2"></span>
+                        </i>
+                        <span>Laboratorium</span>
+                        <span className="pull-right-container">
+                          <i className="fa fa-angle-right pull-right"></i>
+                        </span>
+                      </a>
+                      <ul className="treeview-menu">
+                        <li>
+                          <a href="charts_chartjs.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            ChartJS
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_flot.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Flot
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_inline.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Inline charts
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_morris.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Morris
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_peity.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Peity
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_chartist.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Chartist
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_c3_axis.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Axis Chart
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_c3_bar.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Bar Chart
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_c3_data.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Data Chart
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_c3_line.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Line Chart
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_echarts_basic.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Basic Charts
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_echarts_bar.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Bar Chart
+                          </a>
+                        </li>
+                        <li>
+                          <a href="charts_echarts_pie_doughnut.html">
+                            <i className="icon-Commit">
+                              <span className="path1"></span>
+                              <span className="path2"></span>
+                            </i>
+                            Pie & Doughnut Chart
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
                     <li className="header">COLLECTIONS</li>
                     <li className="treeview">
-                      <a href="#">
+                      <a
+                        href="https://www.example.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="icon-Library">
                           <span className="path1"></span>
                           <span className="path2"></span>
@@ -717,7 +888,11 @@ export default class Menu extends Component {
                           </a>
                         </li>
                         <li className="treeview">
-                          <a href="#">
+                          <a
+                            href="https://www.example.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <i className="icon-Commit">
                               <span className="path1"></span>
                               <span className="path2"></span>
@@ -749,7 +924,11 @@ export default class Menu extends Component {
                           </ul>
                         </li>
                         <li className="treeview">
-                          <a href="#">
+                          <a
+                            href="https://www.example.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <i className="icon-Commit">
                               <span className="path1"></span>
                               <span className="path2"></span>
@@ -792,7 +971,11 @@ export default class Menu extends Component {
                       </ul>
                     </li>
                     <li className="treeview">
-                      <a href="#">
+                      <a
+                        href="https://www.example.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="icon-Cart">
                           <span className="path1"></span>
                           <span className="path2"></span>
@@ -860,7 +1043,11 @@ export default class Menu extends Component {
                       </ul>
                     </li>
                     <li className="treeview">
-                      <a href="#">
+                      <a
+                        href="https://www.example.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="icon-User">
                           <span className="path1"></span>
                           <span className="path2"></span>
@@ -992,7 +1179,11 @@ export default class Menu extends Component {
                     </li>
                     <li className="header">LOGIN & ERROR </li>
                     <li className="treeview">
-                      <a href="#">
+                      <a
+                        href="https://www.example.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="icon-Chat-locked">
                           <span className="path1"></span>
                           <span className="path2"></span>
@@ -1042,7 +1233,11 @@ export default class Menu extends Component {
                       </ul>
                     </li>
                     <li className="treeview">
-                      <a href="#">
+                      <a
+                        href="https://www.example.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="icon-Chat-check">
                           <span className="path1"></span>
                           <span className="path2"></span>
@@ -1088,7 +1283,7 @@ export default class Menu extends Component {
             </section>
             <div className="sidebar-footer">
               <a
-                href="javascript:void(0)"
+                href="_blank"
                 className="link"
                 data-bs-toggle="tooltip"
                 title="Settings"
@@ -1104,7 +1299,7 @@ export default class Menu extends Component {
                 <span className="icon-Mail"></span>
               </a>
               <a
-                href="javascript:void(0)"
+                href="_blank"
                 className="link"
                 data-bs-toggle="tooltip"
                 title="Logout"
@@ -1147,11 +1342,21 @@ export default class Menu extends Component {
               Home tab content
               <div className="tab-pane active" id="control-sidebar-home-tab">
                 <div className="flexbox">
-                  <a href="javascript:void(0)" className="text-grey">
+                  <a
+                    href="https://www.example.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-grey"
+                  >
                     <i className="ti-more"></i>
                   </a>
                   <p>Users</p>
-                  <a href="javascript:void(0)" className="text-end text-grey">
+                  <a
+                    href="https://www.example.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-end text-grey"
+                  >
                     <i className="ti-plus"></i>
                   </a>
                 </div>
@@ -1165,12 +1370,15 @@ export default class Menu extends Component {
                 </div>
                 <div className="media-list media-list-hover mt-20">
                   <div className="media py-10 px-0">
-                    <a className="avatar avatar-lg status-success" href="#">
+                    <a
+                      className="avatar avatar-lg status-success"
+                      href="_blank"
+                    >
                       <img src="../images/avatar/1.jpg" alt="..." />
                     </a>
                     <div className="media-body">
                       <p className="fs-16">
-                        <a className="hover-primary" href="#">
+                        <a className="hover-primary" href="_blank">
                           <strong>Tyler</strong>
                         </a>
                       </p>
@@ -1180,12 +1388,12 @@ export default class Menu extends Component {
                   </div>
 
                   <div className="media py-10 px-0">
-                    <a className="avatar avatar-lg status-danger" href="#">
+                    <a className="avatar avatar-lg status-danger" href="_blank">
                       <img src="../images/avatar/2.jpg" alt="..." />
                     </a>
                     <div className="media-body">
                       <p className="fs-16">
-                        <a className="hover-primary" href="#">
+                        <a className="hover-primary" href="_blank">
                           <strong>Luke</strong>
                         </a>
                       </p>
@@ -1195,12 +1403,15 @@ export default class Menu extends Component {
                   </div>
 
                   <div className="media py-10 px-0">
-                    <a className="avatar avatar-lg status-warning" href="#">
+                    <a
+                      className="avatar avatar-lg status-warning"
+                      href="_blank"
+                    >
                       <img src="../images/avatar/3.jpg" alt="..." />
                     </a>
                     <div className="media-body">
                       <p className="fs-16">
-                        <a className="hover-primary" href="#">
+                        <a className="hover-primary" href="_blank">
                           <strong>Evan</strong>
                         </a>
                       </p>
@@ -1210,12 +1421,15 @@ export default class Menu extends Component {
                   </div>
 
                   <div className="media py-10 px-0">
-                    <a className="avatar avatar-lg status-primary" href="#">
+                    <a
+                      className="avatar avatar-lg status-primary"
+                      href="_blank"
+                    >
                       <img src="/images/avatar/4.jpg" alt="..." />
                     </a>
                     <div className="media-body">
                       <p className="fs-16">
-                        <a className="hover-primary" href="#">
+                        <a className="hover-primary" href="_blank">
                           <strong>Evan</strong>
                         </a>
                       </p>
@@ -1225,12 +1439,15 @@ export default class Menu extends Component {
                   </div>
 
                   <div className="media py-10 px-0">
-                    <a className="avatar avatar-lg status-success" href="#">
+                    <a
+                      className="avatar avatar-lg status-success"
+                      href="_blank"
+                    >
                       <img src="/images/avatar/1.jpg" alt="..." />
                     </a>
                     <div className="media-body">
                       <p className="fs-16">
-                        <a className="hover-primary" href="#">
+                        <a className="hover-primary" href="_blank">
                           <strong>Tyler</strong>
                         </a>
                       </p>
@@ -1240,12 +1457,12 @@ export default class Menu extends Component {
                   </div>
 
                   <div className="media py-10 px-0">
-                    <a className="avatar avatar-lg status-danger" href="#">
+                    <a className="avatar avatar-lg status-danger" href="_blank">
                       <img src="../images/avatar/2.jpg" alt="..." />
                     </a>
                     <div className="media-body">
                       <p className="fs-16">
-                        <a className="hover-primary" href="#">
+                        <a className="hover-primary" href="_blank">
                           <strong>Luke</strong>
                         </a>
                       </p>
@@ -1255,12 +1472,15 @@ export default class Menu extends Component {
                   </div>
 
                   <div className="media py-10 px-0">
-                    <a className="avatar avatar-lg status-warning" href="#">
+                    <a
+                      className="avatar avatar-lg status-warning"
+                      href="_blank"
+                    >
                       <img src="images/avatar/3.jpg" alt="..." />
                     </a>
                     <div className="media-body">
                       <p className="fs-16">
-                        <a className="hover-primary" href="#">
+                        <a className="hover-primary" href="_blank">
                           <strong>Evan</strong>
                         </a>
                       </p>
@@ -1270,12 +1490,15 @@ export default class Menu extends Component {
                   </div>
 
                   <div className="media py-10 px-0">
-                    <a className="avatar avatar-lg status-primary" href="#">
+                    <a
+                      className="avatar avatar-lg status-primary"
+                      href="_blank"
+                    >
                       <img src="images/avatar/4.jpg" alt="..." />
                     </a>
                     <div className="media-body">
                       <p className="fs-16">
-                        <a className="hover-primary" href="#">
+                        <a className="hover-primary" href="_blank">
                           <strong>Evan</strong>
                         </a>
                       </p>
@@ -1288,11 +1511,21 @@ export default class Menu extends Component {
               /.tab-pane Settings tab content
               <div className="tab-pane" id="control-sidebar-settings-tab">
                 <div className="flexbox">
-                  <a href="javascript:void(0)" className="text-grey">
+                  <a
+                    href="https://www.example.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-grey"
+                  >
                     <i className="ti-more"></i>
                   </a>
                   <p>Todo List</p>
-                  <a href="javascript:void(0)" className="text-end text-grey">
+                  <a
+                    href="https://www.example.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-end text-grey"
+                  >
                     <i className="ti-plus"></i>
                   </a>
                 </div>
@@ -1512,7 +1745,7 @@ export default class Menu extends Component {
           {/* ./side demo panel   */}
           <div className="sticky-toolbar">
             <a
-              href="#"
+              href="_blank"
               data-bs-toggle="tooltip"
               data-bs-placement="left"
               title="Buy Now"
@@ -1525,7 +1758,7 @@ export default class Menu extends Component {
               </span>
             </a>
             <a
-              href="https://themeforest.net/user/multipurposethemes/portfolio"
+              href="_blank"
               data-bs-toggle="tooltip"
               data-bs-placement="left"
               title="Portfolio"
@@ -1536,7 +1769,7 @@ export default class Menu extends Component {
             </a>
             <a
               id="chat-popup"
-              href="#"
+              href="_blank"
               data-bs-toggle="tooltip"
               data-bs-placement="left"
               title="Live Chat"
@@ -1575,11 +1808,11 @@ export default class Menu extends Component {
                     </span>
                   </button>
                   <div className="dropdown-menu min-w-200">
-                    <a className="dropdown-item fs-16" href="#">
+                    <a className="dropdown-item fs-16" href="_blank">
                       <span className="icon-Color me-15"></span>
                       New Group
                     </a>
-                    <a className="dropdown-item fs-16" href="#">
+                    <a className="dropdown-item fs-16" href="_blank">
                       <span className="icon-Clipboard me-15">
                         <span className="path1"></span>
                         <span className="path2"></span>
@@ -1588,21 +1821,21 @@ export default class Menu extends Component {
                       </span>
                       Contacts
                     </a>
-                    <a className="dropdown-item fs-16" href="#">
+                    <a className="dropdown-item fs-16" href="_blank">
                       <span className="icon-Group me-15">
                         <span className="path1"></span>
                         <span className="path2"></span>
                       </span>
                       Groups
                     </a>
-                    <a className="dropdown-item fs-16" href="#">
+                    <a className="dropdown-item fs-16" href="_blank">
                       <span className="icon-Active-call me-15">
                         <span className="path1"></span>
                         <span className="path2"></span>
                       </span>
                       Calls
                     </a>
-                    <a className="dropdown-item fs-16" href="#">
+                    <a className="dropdown-item fs-16" href="_blank">
                       <span className="icon-Settings1 me-15">
                         <span className="path1"></span>
                         <span className="path2"></span>
@@ -1610,14 +1843,14 @@ export default class Menu extends Component {
                       Settings
                     </a>
                     <div className="dropdown-divider"></div>
-                    <a className="dropdown-item fs-16" href="#">
+                    <a className="dropdown-item fs-16" href="_blank">
                       <span className="icon-Question-circle me-15">
                         <span className="path1"></span>
                         <span className="path2"></span>
                       </span>
                       Help
                     </a>
-                    <a className="dropdown-item fs-16" href="#">
+                    <a className="dropdown-item fs-16" href="_blank">
                       <span className="icon-Notifications me-15">
                         <span className="path1"></span>
                         <span className="path2"></span>
@@ -1637,7 +1870,7 @@ export default class Menu extends Component {
                   <a
                     id="chat-box-toggle"
                     className="waves-effect waves-circle btn btn-circle btn-danger-light h-40 w-40 rounded-circle l-h-45"
-                    href="#"
+                    href="_blank"
                   >
                     <span className="icon-Close fs-22">
                       <span className="path1"></span>
@@ -1659,7 +1892,12 @@ export default class Menu extends Component {
                         />
                       </span>
                       <div className="mx-10">
-                        <a href="#" className="text-dark hover-primary fw-bold">
+                        <a
+                          href="https://www.example.com"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-dark hover-primary fw-bold"
+                        >
                           Mayra Sibley
                         </a>
                         <p className="text-muted fs-12 mb-0">2 Hours</p>
@@ -1672,7 +1910,12 @@ export default class Menu extends Component {
                   <div className="chat-msg self">
                     <div className="d-flex align-items-center justify-content-end">
                       <div className="mx-10">
-                        <a href="#" className="text-dark hover-primary fw-bold">
+                        <a
+                          href="https://www.example.com"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-dark hover-primary fw-bold"
+                        >
                           You
                         </a>
                         <p className="text-muted fs-12 mb-0">3 minutes</p>
@@ -1697,7 +1940,12 @@ export default class Menu extends Component {
                         />
                       </span>
                       <div className="mx-10">
-                        <a href="#" className="text-dark hover-primary fw-bold">
+                        <a
+                          href="https://www.example.com"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-dark hover-primary fw-bold"
+                        >
                           Mayra Sibley
                         </a>
                         <p className="text-muted fs-12 mb-0">40 seconds</p>
@@ -1735,3 +1983,5 @@ export default class Menu extends Component {
     );
   }
 }
+
+export default Menu;

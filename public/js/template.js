@@ -1563,13 +1563,15 @@ function w3_close() {
 		loader.style.display = 'none';
 	}
 
-	document.addEventListener("DOMContentLoaded", function() {
-		loader = document.getElementById('loader');
-		loadNow(1);
-	});
-
-
-new PerfectScrollbar(".multinav-scroll");
+  document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('loader');
+    loadNow(1);
+  
+    const element = document.querySelector('.multinav-scroll');
+    if (element) {
+      new PerfectScrollbar(element);
+    }
+  });  
 
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

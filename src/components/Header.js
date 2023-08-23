@@ -22,10 +22,10 @@ export default class Header extends Component {
             {/* logo*/}
             <div className="logo-lg">
               <span className="light-logo">
-                <img src="../images/logo-dark-text.png" alt="logo" />
+                <img src="images/klinik.png" alt="logo" />
               </span>
               <span className="dark-logo">
-                <img src="../images/logo-light-text.png" alt="logo" />
+                <img src="images/klinik.png" alt="logo" />
               </span>
             </div>
           </a>
